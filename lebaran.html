@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suasana Lebaran</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" onclick="showContent('home')">Home</a></li>
+                <li><a href="#" onclick="showContent('about')">Tentang</a></li>
+                <li><a href="#" onclick="showContent('contact')">Kontak</a></li>
+                <li><a href="#" onclick="showContent('lebaran')">Suasana Saat Lebaran</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <section id="home" class="content-section">       
+                    <h1>Selamat Datang di website RAHMA 
+                        Lebaran IDUL FITRI 1446 H</h1>
+                <h1>Selamat Datang di Suasana Lebaran</h1>
+                <p>Takbir bergema, hati bersuka cita. Selamat datang di halaman utama yang penuh dengan kehangatan dan semangat silaturahmi.</p>
+                <p>Di momen suci ini, mari kita saling memaafkan dan mempererat tali persaudaraan.</p>
+            </section>
+
+            <section id="about" class="content-section" style="display:none;">
+                <h1>Tentang Website Ini</h1>
+                <p>Website ini hadir sebagai sarana berbagi ilmu dan informasi dalam suasana penuh berkah Lebaran.</p>
+                <p>Dibangun dengan semangat kebersamaan, kami berharap konten di dalamnya bisa menjadi bekal ilmu yang bermanfaat setelah bulan Ramadhan yang penuh berkah.</p>
+            </section>
+
+            <section id="contact" class="content-section" style="display:none;">
+                <h1>Silaturahmi & Kontak Kami</h1>
+                <img src="foto saya saat sebelum pergi sholat idul fitri.jpg" alt="Foto sebelum pergi sholat" height="500" width="400">
+                <p>Walau jarak memisahkan, silaturahmi tetap bisa terjalin. Hubungi kami untuk berbagi salam dan cerita Lebaran.</p>
+                <p><strong>Email:</strong> contact@rahmadhanirahma46@gmail.com.</p>
+                <p><strong>Telepon:</strong>+62 2391044483.</p>
+                <p><strong>Alamat:</strong> Jl.Hang Jebat, Tualang.</p>
+            </section>
+
+            <section id="lebaran" class="content-section" style="display:none;">
+                <h1>Galeri Suasana Lebaran.</h1>
+                <p>Berikut momen-momen hangat yang tertangkap saat Hari Raya Idul Fitri:</p>
+
+                <div class="Gallery">
+                    <img src="foto bersama kakak ipar saat lebaran.jpg"  alt="bersama kakak ipar" height="500" width="400">
+                    <img src="foto bersama kakak-kakak saya.jpg"  alt="Bersama kakak-kakak saya"  height="500" width="400>
+                    <img src="foto bersama keluarga dikampung.jpg" alt="bersama keluarga" height="500" width="400">
+                    <img src="foto bersama ortu saat lebaran.jpg" alt="Bersama ortu" height="500" width="400">
+                    <img src="foto bersama saat di pantai.jpg" alt="Bersama di pantai" height="500" width="400">
+                    <img src="foto saya saat pergi mandi-mandi di kampung.jpg" alt="saat pergi mandi-mandi" height="500" width="400">
+
+                         
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 Suasana Lebaran | Dibuat dengan cinta oleh Rahma Dhani 💛
+    </footer>
+
+    <script>
+        function showContent(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(sec => sec.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
